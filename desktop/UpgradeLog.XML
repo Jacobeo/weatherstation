@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CodeProject.OutlookNavi">
+</Property><Property Name="Solution File" Value="C:\Users\Jacob.Ottesen\Documents\DotNet\CodeProject.OutlookNavi\CodeProject.OutlookNavi\CodeProject.OutlookNavi.sln">
+</Property><Property Name="Date" Value="30. juli 2013">
+</Property><Property Name="Time" Value="10:01">
+</Property></Properties><Event ErrorLevel="0" Project="CodeProject.OutlookNavi" Source="CodeProject.OutlookNavi\CodeProject.OutlookNavi.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CodeProject.OutlookNavi" Source="CodeProject.OutlookNavi\CodeProject.OutlookNavi.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CodeProject.OutlookNavi.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="CodeProject.OutlookNavi.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CodeProject.OutlookNavi" Source="CodeProject.OutlookNavi\CodeProject.OutlookNavi.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
