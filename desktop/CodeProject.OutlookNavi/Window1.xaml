@@ -151,10 +151,54 @@
             </Setter>
         </Style>
 
-    </Window.Resources>
-    <Grid>
+        <Style x:Key="OutlookTabItemHomeStyle" TargetType="{x:Type TabItem}">
+            <Setter Property="Padding" Value="12,2,12,2"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabItem}">
+                        <Border SnapsToDevicePixels="true" x:Name="Bd"
+                    Background="{TemplateBinding Background}"
+                    BorderThickness="0" BorderBrush="#000000">
+                            <ContentPresenter SnapsToDevicePixels=
+                        "{TemplateBinding SnapsToDevicePixels}"
+                        Margin="{TemplateBinding Padding}"
+                VerticalAlignment="{Binding Path=VerticalContentAlignment,
+                RelativeSource={RelativeSource AncestorType=
+                        {x:Type ItemsControl}}}"
+                ContentSource="Header" RecognizesAccessKey="True"
+                            HorizontalAlignment="Left"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Selector.IsSelected" Value="True">
+                                <Setter Property="Background" TargetName="Bd"
+                Value="{DynamicResource OutlookButtonBackground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
+
+
+        <Style x:Key="MainStyle" TargetType="Canvas">
+
+
+        </Style>
+
+    </Window.Resources>
+    
+    
+    <Grid>
+        <!--NAVIGATION PANE -->
         <TabControl VerticalAlignment="Stretch" Width="200" Height="Auto" TabStripPlacement="Bottom" Style="{DynamicResource OutlookTabControlStyle}" BorderBrush="#000000" HorizontalAlignment="Left" BorderThickness="0,0,0,0">
+            <TabItem Name="Home" Header="Home" Height="75" Style="{DynamicResource OutlookTabItemHomeStyle}" Background="{DynamicResource ButtonColor}" Foreground="{DynamicResource OutlookButtonForeground}" PreviewMouseLeftButtonDown="Home_PreviewMouseLeftButtonDown">
+                <Grid/>
+            </TabItem>
             <TabItem Header="Sensors" Height="75" Style="{DynamicResource OutlookTabItemStyle}" Background="{DynamicResource ButtonColor}" Foreground="{DynamicResource OutlookButtonForeground}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" IsTabStop="True">
                 <Grid/>
             </TabItem>
@@ -162,8 +206,27 @@
                 <Grid/>
             </TabItem>
             <TabItem Header="Settings" Height="75" Style="{DynamicResource OutlookTabItemStyle}" Background="{DynamicResource ButtonColor}" Foreground="{DynamicResource OutlookButtonForeground}">
-                <Grid/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="492*" />
+                        <RowDefinition Height="65*" />
+                    </Grid.RowDefinitions>
+                </Grid>
             </TabItem>
         </TabControl>
+
+        <!-- MAIN -->
+        <Canvas VerticalAlignment="Stretch" Height="Auto"   Style="{DynamicResource MainStyle}" HorizontalAlignment="Stretch" Margin="202,0,0,0">
+            <Button Click="Button_Click">Hej</Button>
+            
+            
+        </Canvas>
+    <!-- SENSOR -->
+        <Canvas Height="Auto"   Style="{DynamicResource MainStyle}" HorizontalAlignment="Right" Width="576">
+
+
+
+        </Canvas>
     </Grid>
+
 </Window>

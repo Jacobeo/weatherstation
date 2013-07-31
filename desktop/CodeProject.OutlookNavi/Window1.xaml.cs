@@ -23,7 +23,17 @@ namespace CodeProject.OutlookNavi
         {
             InitializeComponent();
 
-
         }
+
+        private void Home_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("Hello");
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hello");
+        }
+
     }
 }
