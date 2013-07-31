@@ -3,26 +3,30 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Classic"       
     Title="Weaterstation 1.0" Height="600" Width="800"
-    WindowStyle="SingleBorderWindow" ResizeMode="NoResize"
-    WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    WindowStyle="SingleBorderWindow" ResizeMode="CanResize"
+        WindowState="Maximized"
+    WindowStartupLocation="CenterScreen">
+   
     <Window.Resources>
-        <SolidColorBrush x:Key="OutlookButtonForeground" Color="#FF204D89"/>
-         
-        <LinearGradientBrush x:Key="OutlookButtonBackground" EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="#FFD9EDFF" Offset="0"/>
+        <SolidColorBrush x:Key="OutlookButtonForeground" Color="#FFFFFF"/>
+
+        <SolidColorBrush x:Key="ButtonColor" Color="#054aab"/>
+
+        <SolidColorBrush x:Key="OutlookButtonBackground" Color="#054aab"/> <!--EndPoint="0.5,1" StartPoint="0.5,0">-->
+            <!--<GradientStop Color="#FFD9EDFF" Offset="0"/>
             <GradientStop Color="#FFC0DEFF" Offset="0.445"/>
             <GradientStop Color="#FFC0D9FB" Offset="1"/>
             <GradientStop Color="#FFAFD1F8" Offset="0.53"/>
-        </LinearGradientBrush>
+        </LinearGradientBrush>-->
 
-        <LinearGradientBrush x:Key="OutlookButtonHighlight" EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="#FFFFBD69" Offset="0"/>
+        <SolidColorBrush x:Key="OutlookButtonHighlight" Color="#3e6db5"/><!--EndPoint="0.5,1" StartPoint="0.5,0">-->
+            <!--<GradientStop Color="#FFFFBD69" Offset="0"/>
             <GradientStop Color="#FFFFB75A" Offset="0.0967"/>
             <GradientStop Color="#FFFFB14C" Offset="0.2580"/>
             <GradientStop Color="#FFFB8C3C" Offset="0.3870"/>
             <GradientStop Color="#FFFEB461" Offset="0.9677"/>
             <GradientStop Color="#FFFEBB67" Offset="1"/>
-        </LinearGradientBrush>
+        </LinearGradientBrush>-->
         
         <Style x:Key="OutlookTabControlStyle" TargetType="{x:Type TabControl}">
             <Setter Property="Foreground" Value="{DynamicResource OutlookButtonForeground}"/>
@@ -126,7 +130,7 @@
                     <ControlTemplate TargetType="{x:Type TabItem}">
                         <Border SnapsToDevicePixels="true" x:Name="Bd"
                     Background="{TemplateBinding Background}"
-                    BorderThickness="1" BorderBrush="#FF6593CF">
+                    BorderThickness="0" BorderBrush="#000000">
                             <ContentPresenter SnapsToDevicePixels=
                         "{TemplateBinding SnapsToDevicePixels}"
                         Margin="{TemplateBinding Padding}"
@@ -150,14 +154,14 @@
     </Window.Resources>
     <Grid>
 
-        <TabControl VerticalAlignment="Stretch" Width="200" Height="Auto" TabStripPlacement="Top" Style="{DynamicResource OutlookTabControlStyle}" BorderBrush="#FF6593CF" HorizontalAlignment="Left" BorderThickness="1,1,1,0">
-            <TabItem Header="Sensors" Height="30" Style="{DynamicResource OutlookTabItemStyle}" Background="{DynamicResource OutlookButtonBackground}" Foreground="{DynamicResource OutlookButtonForeground}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" IsTabStop="True">
+        <TabControl VerticalAlignment="Stretch" Width="200" Height="Auto" TabStripPlacement="Bottom" Style="{DynamicResource OutlookTabControlStyle}" BorderBrush="#000000" HorizontalAlignment="Left" BorderThickness="0,0,0,0">
+            <TabItem Header="Sensors" Height="75" Style="{DynamicResource OutlookTabItemStyle}" Background="{DynamicResource ButtonColor}" Foreground="{DynamicResource OutlookButtonForeground}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" IsTabStop="True">
                 <Grid/>
             </TabItem>
-            <TabItem Header="Forecast" Height="30" Style="{DynamicResource OutlookTabItemStyle}" Background="{DynamicResource OutlookButtonBackground}" Foreground="{DynamicResource OutlookButtonForeground}">
+            <TabItem Header="Forecast" Height="75" Style="{DynamicResource OutlookTabItemStyle}" Background="{DynamicResource ButtonColor}" Foreground="{DynamicResource OutlookButtonForeground}">
                 <Grid/>
             </TabItem>
-            <TabItem Header="Settings" Height="30" Style="{DynamicResource OutlookTabItemStyle}" Background="{DynamicResource OutlookButtonBackground}" Foreground="{DynamicResource OutlookButtonForeground}">
+            <TabItem Header="Settings" Height="75" Style="{DynamicResource OutlookTabItemStyle}" Background="{DynamicResource ButtonColor}" Foreground="{DynamicResource OutlookButtonForeground}">
                 <Grid/>
             </TabItem>
         </TabControl>
