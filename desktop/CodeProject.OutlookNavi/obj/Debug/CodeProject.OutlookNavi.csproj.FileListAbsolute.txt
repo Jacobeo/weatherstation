@@ -24,3 +24,7 @@ C:\Users\Jacob.Ottesen\test\weatherstation\desktop\CodeProject.OutlookNavi\obj\D
 C:\Users\Jacob.Ottesen\test\weatherstation\desktop\CodeProject.OutlookNavi\obj\Debug\CodeProject.OutlookNavi.Properties.Resources.resources
 C:\Users\Jacob.Ottesen\test\weatherstation\desktop\CodeProject.OutlookNavi\obj\Debug\ResGen.read.1.tlog
 C:\Users\Jacob.Ottesen\test\weatherstation\desktop\CodeProject.OutlookNavi\obj\Debug\ResGen.write.1.tlog
+C:\Users\Jacob.Ottesen\test\weatherstation\desktop\CodeProject.OutlookNavi\obj\Debug\Home\HomeViewModel.baml
+C:\Users\Jacob.Ottesen\test\weatherstation\desktop\CodeProject.OutlookNavi\obj\Debug\Sensor\SensorViewModel.baml
+C:\Users\Jacob.Ottesen\test\weatherstation\desktop\CodeProject.OutlookNavi\obj\Debug\Home\HomeViewModel.g.cs
+C:\Users\Jacob.Ottesen\test\weatherstation\desktop\CodeProject.OutlookNavi\obj\Debug\Sensor\SensorViewModel.g.cs

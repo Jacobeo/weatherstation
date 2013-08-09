@@ -57,25 +57,31 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="Home\HomeViewModel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sensor\SensorViewModel.xaml">
       <SubType>Designer</SubType>
-    </ApplicationDefinition>
-    <Page Include="Window1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AppView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="AppViewModel.cs" />
+    <Compile Include="Helper Classes\ObservableObject.cs" />
+    <Compile Include="Helper Classes\RelayCommand.cs" />
+    <Compile Include="Home\HomeViewModel.cs" />
+    <Compile Include="Home\HomeViewModel.xaml.cs">
+      <DependentUpon>HomeViewModel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="IPageViewModel.cs" />
+    <Compile Include="Sensor\SensorViewModel.cs" />
+    <Compile Include="Sensor\SensorViewModel.xaml.cs">
+      <DependentUpon>SensorViewModel.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
