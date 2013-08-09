@@ -1,0 +1,224 @@
+﻿<Window x:Class="CodeProject.OutlookNavi.AppView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Classic"       
+    xmlns:local="clr-namespace:CodeProject.OutlookNavi"    
+    Title="Weaterstation 1.0" Height="600" Width="800"
+    WindowStyle="SingleBorderWindow" ResizeMode="CanResize"
+        WindowState="Maximized"
+    WindowStartupLocation="CenterScreen">
+   
+    <Window.Resources>
+        <SolidColorBrush x:Key="OutlookButtonForeground" Color="#FFFFFF"/> <!---->
+
+        <SolidColorBrush x:Key="ButtonColor" Color="#054aab"/>
+
+        <SolidColorBrush x:Key="OutlookButtonBackground" Color="#054aab"/> 
+
+        <SolidColorBrush x:Key="OutlookButtonHighlight" Color="#3e6db5"/>
+        
+        <Style x:Key="OutlookTabControlStyle" TargetType="{x:Type TabControl}">
+            <Setter Property="Foreground" Value="{DynamicResource OutlookButtonForeground}"/>
+            <Setter Property="Background" Value="{DynamicResource OutlookButtonBackground}"/>
+            <Setter Property="BorderBrush" Value="{x:Static Microsoft_Windows_Themes:ClassicBorderDecorator.ClassicBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="MinWidth" Value="10"/>
+            <Setter Property="MinHeight" Value="10"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabControl}">
+                        <Grid ClipToBounds="true" SnapsToDevicePixels="true"
+                      KeyboardNavigation.TabNavigation="Local">
+                            <Grid.RowDefinitions>
+                                <RowDefinition x:Name="RowDefinition0" Height="Auto"/>
+                                <RowDefinition x:Name="RowDefinition1" Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition x:Name="ColumnDefinition0"/>
+                                <ColumnDefinition x:Name="ColumnDefinition1" Width="0"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid x:Name="ContentPanel" Grid.Column="0" Grid.Row="1"
+                        KeyboardNavigation.DirectionalNavigation="Contained"
+                        KeyboardNavigation.TabIndex="2"
+                        KeyboardNavigation.TabNavigation="Local">
+                                <Microsoft_Windows_Themes:ClassicBorderDecorator
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderStyle="Raised"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter SnapsToDevicePixels=
+                            "{TemplateBinding SnapsToDevicePixels}" Margin="2,2,2,2"
+                            x:Name="PART_SelectedContentHost"
+                            ContentSource="SelectedContent"/>
+                                </Microsoft_Windows_Themes:ClassicBorderDecorator>
+                            </Grid>
+                            <StackPanel HorizontalAlignment="Stretch" Margin="0,-2,0,0"
+                    x:Name="HeaderPanel" VerticalAlignment="TOP" Width="Auto" 
+                Height="Auto" Grid.Row="1" IsItemsHost="True"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="TabStripPlacement" Value="Top">
+                                <Setter Property="Grid.Row"
+                        TargetName="ContentPanel" Value="0"/>
+                                <Setter Property="Height"
+                            TargetName="RowDefinition0" Value="*"/>
+                                <Setter Property="Height"
+                            TargetName="RowDefinition1" Value="Auto"/>
+                            </Trigger>
+                            <Trigger Property="TabStripPlacement" Value="Left">
+                                <Setter Property="Grid.Row"
+                            TargetName="ContentPanel" Value="0"/>
+                                <Setter Property="Grid.Column"
+                            TargetName="ContentPanel" Value="1"/>
+                                <Setter Property="Width"
+                            TargetName="ColumnDefinition0" Value="Auto"/>
+                                <Setter Property="Width"
+                            TargetName="ColumnDefinition1" Value="*"/>
+                                <Setter Property="Height"
+                            TargetName="RowDefinition0" Value="*"/>
+                                <Setter Property="Height"
+                            TargetName="RowDefinition1" Value="0"/>
+                            </Trigger>
+                            <Trigger Property="TabStripPlacement" Value="Right">
+                                <Setter Property="Grid.Row"
+                            TargetName="ContentPanel" Value="0"/>
+                                <Setter Property="Grid.Column"
+                            TargetName="ContentPanel" Value="0"/>
+                                <Setter Property="Width"
+                            TargetName="ColumnDefinition0" Value="*"/>
+                                <Setter Property="Width"
+                            TargetName="ColumnDefinition1" Value="Auto"/>
+                                <Setter Property="Height"
+                            TargetName="RowDefinition0" Value="*"/>
+                                <Setter Property="Height"
+                            TargetName="RowDefinition1" Value="0"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground"
+                            Value="{DynamicResource
+                            {x:Static SystemColors.GrayTextBrushKey}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="OutlookTabItemStyle" TargetType="{x:Type TabItem}">
+            <Setter Property="Padding" Value="12,2,12,2"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabItem}">
+                        <Border SnapsToDevicePixels="true" x:Name="Bd"
+                    Background="{TemplateBinding Background}"
+                    BorderThickness="0" BorderBrush="#000000">
+                            <ContentPresenter SnapsToDevicePixels=
+                        "{TemplateBinding SnapsToDevicePixels}"
+                        Margin="{TemplateBinding Padding}"
+                VerticalAlignment="{Binding Path=VerticalContentAlignment,
+                RelativeSource={RelativeSource AncestorType=
+                        {x:Type ItemsControl}}}"
+                ContentSource="Header" RecognizesAccessKey="True"
+                            HorizontalAlignment="Left"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Selector.IsSelected" Value="True">
+                                <Setter Property="Background" TargetName="Bd"
+                Value="{DynamicResource OutlookButtonHighlight}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="OutlookTabItemHomeStyle" TargetType="{x:Type TabItem}">
+            <Setter Property="Padding" Value="12,2,12,2"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabItem}">
+                        <Border SnapsToDevicePixels="true" x:Name="Bd"
+                    Background="{TemplateBinding Background}"
+                    BorderThickness="0" BorderBrush="#000000">
+                            <ContentPresenter SnapsToDevicePixels=
+                        "{TemplateBinding SnapsToDevicePixels}"
+                        Margin="{TemplateBinding Padding}"
+                VerticalAlignment="{Binding Path=VerticalContentAlignment,
+                RelativeSource={RelativeSource AncestorType=
+                        {x:Type ItemsControl}}}"
+                ContentSource="Header" RecognizesAccessKey="True"
+                            HorizontalAlignment="Left"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Selector.IsSelected" Value="True">
+                                <Setter Property="Background" TargetName="Bd"
+                Value="{DynamicResource OutlookButtonBackground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--<Style x:Key="MainStyle" TargetType="Canvas"> </Style> -->
+        <DataTemplate DataType="{x:Type Local:HomeViewModel}">
+            <local:HomeViewModel /> <!-- This is a UserControl -->
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type Local:SensorsViewModel}">
+            <local:SensorViewModel />
+            <!-- This is a UserControl -->
+        </DataTemplate>
+
+    </Window.Resources>
+    
+    
+    <Grid>
+        <!--NAVIGATION PANE -->
+        <TabControl VerticalAlignment="Stretch" Width="200" Height="Auto" TabStripPlacement="Bottom" Style="{DynamicResource OutlookTabControlStyle}" BorderBrush="#000000" HorizontalAlignment="Left" BorderThickness="0,0,0,0">
+            <TabItem Name="Home" Header="Home" Height="75" Style="{DynamicResource OutlookTabItemHomeStyle}" Background="{DynamicResource ButtonColor}" Foreground="{DynamicResource OutlookButtonForeground}" PreviewMouseLeftButtonDown="Home_PreviewMouseLeftButtonDown">
+                <Grid/>
+            </TabItem>
+            <TabItem Header="Sensors" Height="75" Style="{DynamicResource OutlookTabItemStyle}" Background="{DynamicResource ButtonColor}" Foreground="{DynamicResource OutlookButtonForeground}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" IsTabStop="True">
+                <Grid/>
+            </TabItem>
+            <TabItem Header="Forecast" Height="75" Style="{DynamicResource OutlookTabItemStyle}" Background="{DynamicResource ButtonColor}" Foreground="{DynamicResource OutlookButtonForeground}">
+                <Grid/>
+            </TabItem>
+            <TabItem Header="Settings" Height="75" Style="{DynamicResource OutlookTabItemStyle}" Background="{DynamicResource ButtonColor}" Foreground="{DynamicResource OutlookButtonForeground}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="492*" />
+                        <RowDefinition Height="65*" />
+                    </Grid.RowDefinitions>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <!-- MAIN 
+        <Canvas VerticalAlignment="Stretch" Height="Auto"   Style="{DynamicResource MainStyle}" HorizontalAlignment="Stretch" Margin="202,0,0,0">
+            <Button Click="Button_Click">Hej</Button>
+            
+            
+        </Canvas>
+     SENSOR 
+        <Canvas Height="Auto"   Style="{DynamicResource MainStyle}" HorizontalAlignment="Right" Width="576">
+
+
+
+        </Canvas>
+        -->
+    </Grid>
+
+</Window>
