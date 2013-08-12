@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using Microsoft.Windows.Themes;
 using SimpleMVVMExample;
 using System;
 using System.Diagnostics;
