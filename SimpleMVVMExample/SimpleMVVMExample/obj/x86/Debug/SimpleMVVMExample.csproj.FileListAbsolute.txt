@@ -72,3 +72,32 @@ D:\Git\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\SimpleMV
 D:\Git\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.Properties.Resources.resources
 D:\Git\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\Git\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.exe
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.pdb
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.csprojResolveAssemblyReference.cache
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\Home\HomeView.baml
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\Home\HomeView.g.cs
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\Products\ProductsView.g.cs
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\App.g.cs
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample_MarkupCompile.cache
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample_MarkupCompile.lref
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\SimpleMVVMExample.exe
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\SimpleMVVMExample.pdb
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\ApplicationView.g.cs
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\ApplicationView.baml
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\Products\ProductsView.baml
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.g.resources
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.Properties.Resources.resources
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.csproj.GenerateResource.Cache
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Jacob.Ottesen\Documents\Visual Studio 2012\weatherstation\SimpleMVVMExample\SimpleMVVMExample\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
